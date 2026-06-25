@@ -1,6 +1,6 @@
 ---
 name: Customer Persona Copy Map
-version: 1.0.0
+version: 1.1.0
 tags: [customer-persona, copywriting, tone-of-voice, marketing-messaging]
 ---
 # Customer Persona Copy Map
@@ -26,6 +26,7 @@ This skill turns audience research and customer signals into a practical copy ma
 4. **Pain-benefit-message matrix** — Create a cross-reference matrix: persona → top pain points → product benefits that address them → message framing → CTA language → best channel.
 5. **Copy snippet drafting** — Write persona-specific copy snippets: above-the-fold headline, key benefit statement, objection pre-handler, and CTA. Each snippet should feel natural for that persona.
 6. **Channel recommendation** — For each persona-message pair, recommend the best channel(s) and format (e.g., "gift-buyer persona → Instagram Story with gift-guide angle").
+7. **Validation plan** — For every low- or medium-evidence persona, recommend one lightweight validation test before major ad spend.
 
 ## Prompt Templates
 
@@ -121,6 +122,12 @@ This skill turns audience research and customer signals into a practical copy ma
 - ✅ Persona 1: [Evidence strength] — supported by [sources]
 - ⚠️ Persona 2: Medium evidence — [assumptions] need validation via [test idea]
 - ❓ Persona 3: Low evidence — consider deprioritizing until [validation method]
+
+### Validation Plan
+- **Persona / claim:** [what needs validation]
+- **Test:** [survey, landing-page A/B, interview, review mining, small ad test]
+- **Success signal:** [CTR, conversion, qualitative pattern, objection frequency]
+- **Stop condition:** [when to drop or rewrite the persona/message]
 ```
 
 ## Safety Rules
@@ -130,6 +137,8 @@ This skill turns audience research and customer signals into a practical copy ma
 - **NEVER** create personas for sensitive categories (health conditions, financial distress, personal crises) without extreme care and explicit disclosure of limitations
 - **ALWAYS** avoid manipulative messaging that exploits persona vulnerabilities (e.g., insecurity-based marketing to teens, fear-based messaging to elderly)
 - **NEVER** present assumed personas as "proven by AI" — clearly state the evidence basis for every segment
+- **ALWAYS** prefer behavioral or job-to-be-done segmentation over protected traits when possible
+- **ALWAYS** include a validation test for personas built mostly from assumptions
 
 ## Examples
 
